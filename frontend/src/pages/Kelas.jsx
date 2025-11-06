@@ -9,12 +9,11 @@ const Kelas = () => {
   
   const handlePaymentClick = (e, url) => {
     e.preventDefault();
-    setIsLoading(true);
+    // Loading state sementara dinonaktifkan
+    // setIsLoading(true);
     
-    // Simulate network delay for demo purposes
-    setTimeout(() => {
-      window.location.href = url;
-    }, 1000); // This timeout is just for demo, can be removed in production
+    // Langsung redirect ke URL
+    window.location.href = url;
   };
 
   const levels = ['Semua', 'Pemula', 'Menengah', 'Lanjutan'];
@@ -25,6 +24,9 @@ const Kelas = () => {
 
   return (
     <div className="min-h-screen pt-32 pb-16 px-6">
+      {/* Loading Overlay Sementara Dinonaktifkan */}
+      {/* {isLoading && <LoadingOverlay />} */}
+      
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -106,16 +108,11 @@ const Kelas = () => {
                 <button 
                   onClick={(e) => handlePaymentClick(e, kelas.linkMayar)}
                   className="btn-primary w-full flex items-center justify-center gap-2"
-                  disabled={isLoading}
                 >
-                  {isLoading ? (
-                    'Memuat...'
-                  ) : (
-                    <>
-                      Lihat Detail
-                      <ExternalLink size={18} />
-                    </>
-                  )}
+                  <>
+                    Lihat Detail
+                    <ExternalLink size={18} />
+                  </>
                 </button>
               </div>
             </div>
