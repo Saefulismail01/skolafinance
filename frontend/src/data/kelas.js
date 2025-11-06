@@ -4,7 +4,7 @@ export const kelasData = [
     judul: "Kelas: Belajar Crypto dari Nol: Panduan Finansial Web3 untuk Pemula",
     deskripsi: "Pelajari dasar-dasar cryptocurrency, blockchain, dan cara mengelola aset digital dengan aman.",
     gambar: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80",
-    linkMayar: "https://skolative-indonesia.myr.id/course/belajar-crypto-dari-nol-panduan-finansial-web3-untuk-pemula",
+    linkMayar: "https://skofie.myr.id/course/kelas-belajar-crypto-dari-nol-panduan-finansial-web3-untuk-pemula",
     durasi: "4 Minggu",
     level: "Pemula"
   },
