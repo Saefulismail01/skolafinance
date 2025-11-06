@@ -10,13 +10,13 @@ const Home = () => {
       <section className="hero-section">
         <div className="hero-content">
           <div className="inline-block px-4 py-2 mb-6 bg-accent-wash rounded-full">
-            <span className="text-accent-text font-medium text-sm">🚀 Platform Edukasi Web3 Terpercaya</span>
+            <span className="text-accent-text font-medium text-sm">🚀 Platform Edukasi Finansial di era Web3 Terpercaya</span>
           </div>
           <h1 className="hero-title">
-            Kuasai Finansial Digital di Era Web3
+            Rahasia Melek Finansial <br /> di Aset Digital
           </h1>
-          <p className="hero-subtitle">
-            Skolative membantu anak muda memahami cryptocurrency, DeFi, dan investasi digital dengan cara yang modern, mudah, dan praktis.
+          <p className="hero-subtitle text-white/80 dark:text-gray-300">
+            Temukan cara cerdas mengelola aset digital dan raih kebebasan finansial di era yang serba digital ini bersama Skolative
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Link to="/kelas" className="btn-primary">
@@ -144,7 +144,7 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="heading-2 mb-4">Siap Mulai Perjalanan Web3 Anda?</h2>
+          <h2 className="heading-2 mb-4">Siap Mahir Finansial di Aset Digital Anda?</h2>
           <p className="body-large text-text-secondary mb-8">
             Bergabunglah dengan ratusan siswa yang sudah merasakan transformasi finansial mereka
           </p>

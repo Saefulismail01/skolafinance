@@ -1,10 +1,10 @@
 export const kelasData = [
   {
     id: 1,
-    judul: "Fundamental Keuangan Crypto",
+    judul: "Kelas: Belajar Crypto dari Nol: Panduan Finansial Web3 untuk Pemula",
     deskripsi: "Pelajari dasar-dasar cryptocurrency, blockchain, dan cara mengelola aset digital dengan aman.",
     gambar: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80",
-    linkMayar: "https://mayar.link/fundamental-crypto",
+    linkMayar: "https://skolative-indonesia.myr.id/course/belajar-crypto-dari-nol-panduan-finansial-web3-untuk-pemula",
     durasi: "4 Minggu",
     level: "Pemula"
   },
@@ -44,15 +44,15 @@ export const kelasData = [
     durasi: "4 Minggu",
     level: "Menengah"
   },
-  {
-    id: 6,
-    judul: "Crypto Trading untuk Pemula",
-    deskripsi: "Pelajari teknik trading crypto, analisa chart, dan strategi entry-exit yang menguntungkan.",
-    gambar: "https://images.unsplash.com/photo-1642543348745-03fb8fc4cb6d?w=800&q=80",
-    linkMayar: "https://mayar.link/crypto-trading",
-    durasi: "6 Minggu",
-    level: "Pemula"
-  }
+  // {
+  //   id: 6,
+  //   judul: "Crypto Trading untuk Pemula",
+  //   deskripsi: "Pelajari teknik trading crypto, analisa chart, dan strategi entry-exit yang menguntungkan.",
+  //   gambar: "https://images.unsplash.com/photo-1642543348745-03fb8fc4cb6d?w=800&q=80",
+  //   linkMayar: "https://mayar.link/crypto-trading",
+  //   durasi: "6 Minggu",
+  //   level: "Pemula"
+  // }
 ];
 
 export const testimoniData = [
