@@ -12,10 +12,10 @@ const Footer = () => {
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent-primary to-accent-strong flex items-center justify-center">
                 <span className="text-white font-bold text-lg">S</span>
               </div>
-              <span className="font-bold text-xl text-text-primary">Skolative</span>
+              <span className="font-bold text-xl text-text-primary">Skofie</span>
             </div>
             <p className="text-text-secondary body-medium mb-4">
-              Platform kelas finansial digital yang membantu anak muda memahami dunia Web3 dan cryptocurrency dengan cara yang mudah dan modern.
+              Platform edukasi finansial digital yang membantu memahami dunia Web3 dan cryptocurrency dengan cara yang mudah dan modern.
             </p>
             <div className="flex space-x-3">
               <a href="#" className="p-2 rounded-full hover:bg-bg-card transition-colors" aria-label="Email">
@@ -58,7 +58,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border-light text-center">
           <p className="text-text-secondary body-small">
-            © 2025 Skolative. All rights reserved.
+            © 2025 Skofie. All rights reserved.
           </p>
         </div>
       </div>

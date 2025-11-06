@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +17,7 @@ const Navbar = () => {
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent-primary to-accent-strong flex items-center justify-center">
               <span className="text-white font-bold text-lg">S</span>
             </div>
-            <span className="font-bold text-xl text-text-primary">Skolative</span>
+            <span className="font-bold text-xl text-text-primary">Skofie</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -35,12 +34,10 @@ const Navbar = () => {
             >
               Kelas
             </Link>
-            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-2">
-            <ThemeToggle />
+          <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="p-2 rounded-full hover:bg-bg-section transition-colors"

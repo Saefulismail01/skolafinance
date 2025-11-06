@@ -61,7 +61,7 @@ export const testimoniData = [
     nama: "Rizky Pratama",
     foto: "https://i.pravatar.cc/150?img=12",
     pekerjaan: "Mahasiswa IT",
-    testimoni: "Skolative benar-benar mengubah cara saya memandang crypto. Sekarang saya bisa manage portofolio dengan percaya diri!",
+    testimoni: "Skofie benar-benar mengubah cara saya memandang crypto. Sekarang saya bisa manage portofolio dengan percaya diri!",
     rating: 5
   },
   {

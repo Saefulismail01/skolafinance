@@ -16,7 +16,7 @@ const Home = () => {
             Rahasia Melek Finansial <br /> di Aset Digital
           </h1>
           <p className="hero-subtitle text-white/80 dark:text-gray-300">
-            Temukan cara cerdas mengelola aset digital dan raih kebebasan finansial di era yang serba digital ini bersama Skolative
+            Temukan cara cerdas mengelola aset digital dan raih kebebasan finansial di era yang serba digital ini bersama Skofie
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <Link to="/kelas" className="btn-primary">
@@ -49,7 +49,7 @@ const Home = () => {
       <section id="keunggulan" className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Kenapa Pilih Skolative?</h2>
+            <h2 className="heading-2 mb-4">Kenapa Pilih Skofie?</h2>
             <p className="body-large text-text-secondary max-w-2xl mx-auto">
               Kami menyediakan pembelajaran yang komprehensif dengan pendekatan praktis untuk sukses di dunia Web3
             </p>
@@ -109,7 +109,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Apa Kata Mereka?</h2>
             <p className="body-large text-text-secondary max-w-2xl mx-auto">
-              Dengar langsung pengalaman dari siswa yang sudah bergabung dengan Skolative
+              Dengar langsung pengalaman dari siswa yang sudah bergabung dengan Skofie
             </p>
           </div>
 

@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
 import { ExternalLink, Clock, BarChart3 } from 'lucide-react';
 import { kelasData } from '../data/kelas';
+import LoadingOverlay from '../components/LoadingOverlay';
 
 const Kelas = () => {
   const [filter, setFilter] = useState('Semua');
+  const [isLoading, setIsLoading] = useState(false);
+  
+  const handlePaymentClick = (e, url) => {
+    e.preventDefault();
+    setIsLoading(true);
+    
+    // Simulate network delay for demo purposes
+    setTimeout(() => {
+      window.location.href = url;
+    }, 1000); // This timeout is just for demo, can be removed in production
+  };
 
   const levels = ['Semua', 'Pemula', 'Menengah', 'Lanjutan'];
 
@@ -51,7 +63,13 @@ const Kelas = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-3 right-3">
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-semibold text-text-primary">
+                  <span 
+                    className={`px-3 py-1 rounded-full text-xs font-semibold text-black dark:text-black ${
+                      kelas.level === 'Pemula' ? 'bg-green-200/90' : 
+                      kelas.level === 'Menengah' ? 'bg-yellow-200/90' : 
+                      'bg-red-200/90'
+                    }`}
+                  >
                     {kelas.level}
                   </span>
                 </div>
@@ -72,20 +90,33 @@ const Kelas = () => {
                   </div>
                   <div className="flex items-center gap-1">
                     <BarChart3 size={16} />
-                    <span>{kelas.level}</span>
+                    <span 
+                      className={`font-medium ${
+                        kelas.level === 'Pemula' ? 'text-green-600 dark:text-green-500' : 
+                        kelas.level === 'Menengah' ? 'text-yellow-600 dark:text-yellow-500' : 
+                        'text-red-600 dark:text-red-500'
+                      }`}
+                    >
+                      {kelas.level}
+                    </span>
                   </div>
                 </div>
 
                 {/* CTA Button */}
-                <a 
-                  href={kelas.linkMayar}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button 
+                  onClick={(e) => handlePaymentClick(e, kelas.linkMayar)}
                   className="btn-primary w-full flex items-center justify-center gap-2"
+                  disabled={isLoading}
                 >
-                  Lihat Detail
-                  <ExternalLink size={18} />
-                </a>
+                  {isLoading ? (
+                    'Memuat...'
+                  ) : (
+                    <>
+                      Lihat Detail
+                      <ExternalLink size={18} />
+                    </>
+                  )}
+                </button>
               </div>
             </div>
           ))}
@@ -100,6 +131,9 @@ const Kelas = () => {
           </div>
         )}
       </div>
+      
+      {/* Loading Overlay */}
+      {isLoading && <LoadingOverlay />}
     </div>
   );
 };
